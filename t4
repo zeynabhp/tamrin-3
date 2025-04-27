@@ -1,0 +1,16 @@
+function multiplyArrayElements(arr) {
+  if (arr.length < 6) {
+    return "آرایه باید حداقل شش عنصر داشته باشد.";
+  }
+
+  let product = 1;
+  for (let i = 2; i <= 5; i++) {
+    product *= arr[i];
+  }
+
+  return product;
+}
+
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8];
+let result = multiplyArrayElements(myArray);
+console.log(result); 
